@@ -389,7 +389,29 @@ def detect_changes(old_state, new_state):
 def _cat_status_label(status):
     return AVAIL_STATUS_MAP.get(status, ("UNKNOWN", ""))[0]
 
+def send_telegram(message):
+    token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+    chat_id = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
+    if not token or not chat_id:
+        print("  ⚠️ Telegram not configured.")
+        return
+
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+
+    r = requests.post(
+        url,
+        json={
+            "chat_id": chat_id,
+            "text": message,
+        },
+        timeout=15,
+    )
+
+    if r.status_code == 200:
+        print("  ✅ Telegram sent")
+    else:
+        print(f"  ❌ Telegram failed: {r.text}")
 def send_email(subject, changes, shows, movie_info):
     api_key = RESEND_API_KEY.strip()
     to = RESEND_TO_EMAIL.strip()
