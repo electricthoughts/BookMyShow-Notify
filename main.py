@@ -404,7 +404,15 @@ def send_telegram(message):
         json={
             "chat_id": chat_id,
             "text": message,
-        },
+            "reply_markup": {
+                "inline_keyboard": [[
+                    {
+                        "text": "🎟 Open BookMyShow",
+                        "url": CONFIG["url"]
+                    }
+                ]]
+            }
+},
         timeout=15,
     )
 
