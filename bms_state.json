@@ -543,6 +543,54 @@
       "cat": "CLASSIC",
       "price": "61.74",
       "status": "3"
+    },
+    "PBRM|22301|20260720|ELITE": {
+      "venue": "PVR: Perambur, Spectrum Mall",
+      "time": "03:05 PM",
+      "date": "20260720",
+      "cat": "ELITE",
+      "price": "210.98",
+      "status": "3"
+    },
+    "PBRM|22301|20260720|BUDGET": {
+      "venue": "PVR: Perambur, Spectrum Mall",
+      "time": "03:05 PM",
+      "date": "20260720",
+      "cat": "BUDGET",
+      "price": "61.74",
+      "status": "3"
+    },
+    "PBRM|22302|20260720|ELITE": {
+      "venue": "PVR: Perambur, Spectrum Mall",
+      "time": "06:40 PM",
+      "date": "20260720",
+      "cat": "ELITE",
+      "price": "210.98",
+      "status": "3"
+    },
+    "PBRM|22302|20260720|BUDGET": {
+      "venue": "PVR: Perambur, Spectrum Mall",
+      "time": "06:40 PM",
+      "date": "20260720",
+      "cat": "BUDGET",
+      "price": "61.74",
+      "status": "3"
+    },
+    "PBRM|22303|20260720|ELITE": {
+      "venue": "PVR: Perambur, Spectrum Mall",
+      "time": "10:55 PM",
+      "date": "20260720",
+      "cat": "ELITE",
+      "price": "210.98",
+      "status": "3"
+    },
+    "PBRM|22303|20260720|BUDGET": {
+      "venue": "PVR: Perambur, Spectrum Mall",
+      "time": "10:55 PM",
+      "date": "20260720",
+      "cat": "BUDGET",
+      "price": "61.74",
+      "status": "3"
     }
   },
   "dates": {
