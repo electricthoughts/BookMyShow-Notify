@@ -22,7 +22,7 @@ import requests
 CONFIG = {
     "url": os.getenv(
         "BMS_URL",
-        "https://in.bookmyshow.com/movies/chennai/dhurandhar-the-revenge/buytickets/ET00478890"
+        "https://in.bookmyshow.com/movies/coimbatore/spider-man-brand-new-day/buytickets/ET00447840"
     ),
     "dates": os.getenv("BMS_DATES", ""),          # comma-separated YYYYMMDD, empty = from URL
     "theatre": os.getenv("BMS_THEATRE", ""),       # substring filter, empty = all
@@ -31,7 +31,7 @@ CONFIG = {
 
 RESEND_API_KEY = os.getenv("RESEND_API_KEY", "")
 RESEND_TO_EMAIL = os.getenv("RESEND_TO_EMAIL", "")
-RESEND_FROM_EMAIL = os.getenv("RESEND_FROM_EMAIL", "aviiciii@resend.dev")
+RESEND_FROM_EMAIL = os.getenv("RESEND_FROM_EMAIL", "")
 
 STATE_FILE = "bms_state.json"
 
@@ -60,6 +60,7 @@ TIME_PERIODS = {
 
 REGION_MAP = {
     "chennai":    ("CHEN",   "chennai",    "13.056", "80.206", "tf3"),
+    "coimbatore": ("COIM", "coimbatore", "11.016845", "76.955832", "t9y"),
     "mumbai":     ("MUMBAI", "mumbai",     "19.076", "72.878", "te7"),
     "delhi-ncr":  ("NCR",    "delhi-ncr",  "28.613", "77.209", "ttn"),
     "delhi":      ("NCR",    "delhi-ncr",  "28.613", "77.209", "ttn"),
@@ -67,8 +68,13 @@ REGION_MAP = {
     "bangalore":  ("BANG",   "bengaluru",  "12.972", "77.594", "tdr"),
     "hyderabad":  ("HYD",    "hyderabad",  "17.385", "78.487", "tep"),
     "kolkata":    ("KOLK",   "kolkata",    "22.573", "88.364", "tun"),
+    "oddanchatram": ("ODDA", "oddanchatram", "10.4851", "77.7481", "t9z"),
     "pune":       ("PUNE",   "pune",       "18.520", "73.856", "te2"),
     "kochi":      ("KOCH",   "kochi",      "9.932",  "76.267", "t9z"),
+    "cumbum":     ("CMBM", "cumbum", "9.7344", "77.2807", "t9w"),    
+    "thrissur":     ("THSR", "thrissur", "10.5276", "76.2144", "t9y"),    
+    
+    
 }
 
 
