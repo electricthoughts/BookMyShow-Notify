@@ -1,3 +1,5 @@
+**Original: [bms-ticket-notifier](https://github.com/aviiciii/bms-ticket-notifier) by [aviicii](https://github.com/aviiciii).**
+
 # BMS Ticket Notifier
 
 Automatically monitors [BookMyShow](https://in.bookmyshow.com) for ticket availability and sends you an email alert when something changes.
