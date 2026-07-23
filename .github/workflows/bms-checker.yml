@@ -6,6 +6,11 @@ on:
     - cron: '* * * * *'
   workflow_dispatch:  # Manual trigger button
 
+# USE IF YOU SET CRONJOB TO RUN EVERY MINUTE
+# concurrency:
+#   group: bms-check
+#   cancel-in-progress: true
+
 jobs:
   check-tickets:
     runs-on: ubuntu-latest
